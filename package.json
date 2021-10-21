@@ -1,0 +1,25 @@
+{
+  "name": "table2excel-export",
+  "version": "1.0.0",
+  "description": "Export HTML Table to excel with style",
+  "main": "exportToExcel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhir600/Export-Html-Table-Data-into-Excel-using-Javascript.git"
+  },
+  "keywords": [
+    "Export HTML Table To Excel",
+    "Export Table Data into xls",
+    "Export Table into xls with custom File Name",
+    "Export HTML Table into xls with CSS"
+  ],
+  "author": "Sudhir K Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudhir600/Export-Html-Table-Data-into-Excel-using-Javascript/issues"
+  },
+  "homepage": "https://github.com/sudhir600/Export-Html-Table-Data-into-Excel-using-Javascript#readme"
+}

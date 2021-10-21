@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Export To Excel with pure JavaScript</title>
+		<link rel="icon" href="https://cdn0.iconfinder.com/data/icons/fatcow/32x32/table_excel.png" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div>
+			<table id="exTable" border="2">
+				<thead class="lockedRecordsBg">
+					<tr bgcolor='#87AFC6' style='height: 75px; text-align: center; width: 250px'>
+						<th style="width:40px">S#</th>
+						<th>name</th>
+						<th>Email</th>
+						<th>Phone</th>
+						<th>Country</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Sudhir K Gupta</td>
+						<td>test@test.com</td>
+						<td>+91 45********</td>
+						<td>India</td>
+					</tr>
+					<tr>
+						<th style="height:0px">2</th>
+						<td style="height:0px">This row will be hidden in excel</td>
+						<td style="font-style:italic">Right click and unhide in excel</td>
+						<td style="height:0px">+91 29********</td>
+						<td style="height:0px">Denmark</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Test 123</td>
+						<td style="text-decoration: line-through;">line through text</td>
+						<td style="background-color:blue;color:white" colspan="2"> bg =  blue and color = white and merged column</td>
+					</tr>
+					<tr>
+						<th>4</th>
+						<td style="height: 150px">
+							<img
+							 src="https://avatars0.githubusercontent.com/u/4952560?s=460&v=4"
+							 height="85"
+							 width="100"
+							 alt="sample image"
+							/>
+						</td>
+						<td style="font-weight:bold">test@gmail.com</td>
+						<td></td>
+						<td>USA</td>
+					</tr>
+					<tr>
+						<th>5</th>
+						<td>sp char - !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~</td>
+						<td style="text-decoration: line-through;">like through text</td>
+						<td>+91 29********</td>
+						<td>Switzerland</td>
+					</tr>
+					<tr>
+						<th>6</th>
+						<td>
+						Lorem Ipsum只是印刷和排版行业的伪文本<br />
+						Lorem Ipsum - просто фиктивный текст в полиграфии и вёрстке.<br />
+						Lorem Ipsum to po prostu fikcyjny tekst branży drukarskiej i składu.
+						Lorem Ipsumは、印刷および植字業界の単なるダミーテキストです。
+						</td>
+						<td>test@gmail.com</td>
+						<td rowspan="2">Merge row 2 and 3</td>
+						<td>India</td>
+					</tr>
+					<tr>
+						<th>7</th>
+						<td>Sudhir K Gupta</td>
+						<td>test@gmail.com</td>
+						<td style="color:red">Canada (color = red)</td>
+					</tr>
+				</tbody>
+			</table>
+			<input type="button" value="export" onclick="exportToExcel('exTable')" />
+		</div>
+		<script src="exportToExcel.js" defer></script>
+	</body>
+</html>
